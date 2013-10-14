@@ -7,3 +7,5 @@ KSU_bioinfo_lab
 Count_fastas.pl - see assembly_quality_stats_for_multiple_assemblies.pl
 
 assembly_quality_stats_for_multiple_assemblies.pl - This script runs a slightly modified version of Joseph Fass' Count_fasta.pl (original available at http://wiki.bioinformatics.ucdavis.edu/index.php/Count_fasta.pl ) on a fasta file from each assembly. It then creates comma separated file called assembly_metrics.csv listing the N25,N50,N75, cumulative contig length, and number of contigs for each assembly (also download Count_fastas.pl and change $path_to_Count_fastas on line 13 of assembly_quality_stats_for_multiple_assemblies.pl).
+
+fix_ogs_gff.pl - This script takes a GFF file with lines in random order and outputs the lines in 'hierarchical' order with genes separated by ### directive to indicate that all forward references to feature IDs that have been seen to this point have been resolved. Note that with this script the order of the genes is not preserved.
