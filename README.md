@@ -11,3 +11,5 @@ assembly_quality_stats_for_multiple_assemblies.pl - This script runs a slightly 
 fix_ogs_gff.pl - This script takes a GFF file with lines in random order and outputs the lines in 'hierarchical' order with genes separated by ### directive to indicate that all forward references to feature IDs that have been seen to this point have been resolved. Note that with this script the order of the genes is not preserved.
 
 chromosome_from_scaffold_agp.pl - This script takes an AGP file, superscaffolds from contigs, and another AGP file, scaffolds from contigs, and generates an AGP file, superscaffolds from scaffolds.
+
+scaffold_map.pl- This script creates the mapping between the scaffold names from a previous assembly and the scaffold names of the current assembly.
