@@ -12,4 +12,4 @@ fix_ogs_gff.pl - This script takes a GFF file with lines in random order and out
 
 chromosome_from_scaffold_agp.pl - This script takes an AGP file, superscaffolds from contigs, and another AGP file, scaffolds from contigs, and generates an AGP file, superscaffolds from scaffolds.
 
-scaffold_map.pl- This script creates the mapping between the scaffold names from a previous assembly and the scaffold names of the current assembly.
+scaffold_map.pl - This script creates the mapping between the scaffold names from a previous assembly and the scaffold names of the current assembly.
