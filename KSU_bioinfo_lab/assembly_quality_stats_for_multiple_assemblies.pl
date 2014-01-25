@@ -9,15 +9,15 @@
 
 use strict;
 use warnings;
-my $out;
-my $path_to_Count_fastas="/homes/bioinfo/bioinfo_software/github_scripts/transcriptome-and-genome-assembly/KSU_bioinfo_lab";
+use File::Basename; # enable maipulating of the full path
+my $dirname = dirname(__FILE__); # get path to the file that is running (here assembly_quality_stats_for_multiple_assemblies.pl)
 my $outfile="assembly_metrics.csv";
 open (METRICS, ">$outfile");
 print METRICS "Filename,Cumulative length of contigs(bp),Number of contigs,N25(bp),N50(bp),N75(bp),Number of contigs longer than N25,Number of contigs longer than N50,Number of contigs longer than N75\n";
 foreach my $f (@ARGV)
 {
-		my $out=`perl ${path_to_Count_fastas}/Count_fastas.pl ${f}`;
-		print METRICS "${f},${out}\n";
+    my $out=`perl ${dirname}/Count_fastas.pl ${f}`;
+    print METRICS "${f},${out}\n";
 
 }
 close (METRICS);
