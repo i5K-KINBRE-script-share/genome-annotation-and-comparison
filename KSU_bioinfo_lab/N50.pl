@@ -65,7 +65,7 @@ while(<FILE>)
 ##############################################################################
 @lengths=sort{$b<=>$a} @lengths; #Sort lengths largest to smallest
 
-my $contig_count = scalar(@length);
+my $contig_count = scalar(@lengths);
 my $current_length; #create a new variable for N50
 my $fraction=$total_length;
 foreach(my $j=0; $fraction>$total_length/2; $j++) #until $fraction is greater than half the total length increment the index value $j for @lengths
