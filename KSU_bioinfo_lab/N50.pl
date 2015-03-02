@@ -73,8 +73,8 @@ foreach(my $j=0; $fraction>$total_length/2; $j++) #until $fraction is greater th
     $current_length=$lengths[$j];
     $fraction -= $current_length; # subtract current length from $fraction
 }
-say "N50: $current_length";
-say "Total length: $total_length";
+say "N50 (bp): $current_length";
+say "Total length (bp) : $total_length";
 say "The number of contigs is: $contig_count";
 
 
